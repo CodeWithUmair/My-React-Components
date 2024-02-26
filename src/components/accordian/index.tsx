@@ -1,20 +1,30 @@
 //single selection
 //multiple selection
 
+import React from "react";
 import { useState } from "react";
 import data from "./data";
 import "./styles.css";
 
-export default function Accordian() {
-  const [selected, setSelected] = useState(null);
-  const [enableMultiSelection, setEnableMultiSelection] = useState(false);
-  const [multiple, setMultiple] = useState([]);
+type DataItem = {
+  id: number | string;
+  question: string;
+  answer: string;
+};
 
-  function handleSingleSelection(getCurrentId) {
-    setSelected(getCurrentId === selected ? null : getCurrentId);
+export default function Accordian() {
+  const [selected, setSelected] = useState<number | null>(null);
+  const [enableMultiSelection, setEnableMultiSelection] =
+    useState<boolean>(false);
+  const [multiple, setMultiple] = useState<number[]>([]);
+
+  function handleSingleSelection(getCurrentId: number) {
+    setSelected((prevSelected) =>
+      getCurrentId === prevSelected ? null : getCurrentId
+    );
   }
 
-  function handleMultiSelection(getCurrentId) {
+  function handleMultiSelection(getCurrentId: number) {
     let cpyMutiple = [...multiple];
     const findIndexOfCurrentId = cpyMutiple.indexOf(getCurrentId);
 
@@ -37,13 +47,13 @@ export default function Accordian() {
       </button>
       <div className="accordian">
         {data && data.length > 0 ? (
-          data.map((dataItem) => (
-            <div className="item" key={dataItem.id}>
+          data.map((dataItem: DataItem) => (
+            <div className="item rounded" key={dataItem.id as string}>
               <div
                 onClick={
                   enableMultiSelection
-                    ? () => handleMultiSelection(dataItem.id)
-                    : () => handleSingleSelection(dataItem.id)
+                    ? () => handleMultiSelection(dataItem.id as number)
+                    : () => handleSingleSelection(dataItem.id as number)
                 }
                 className="title"
               >
@@ -51,11 +61,11 @@ export default function Accordian() {
                 <span>+</span>
               </div>
               {enableMultiSelection
-                ? multiple.indexOf(dataItem.id) !== -1 && (
-                    <div className="acc-content ">{dataItem.answer}</div>
+                ? multiple.indexOf(dataItem.id as number) !== -1 && (
+                    <div className="acc-content">{dataItem.answer}</div>
                   )
                 : selected === dataItem.id && (
-                    <div className="acc-content ">{dataItem.answer}</div>
+                    <div className="acc-content">{dataItem.answer}</div>
                   )}
               {/* {selected === dataItem.id ||
               multiple.indexOf(dataItem.id) !== -1 ? (
