@@ -1,5 +1,5 @@
 import "./App.css";
-import Accordian from "./components/accordian";
+// import Accordian from "./components/accordian";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
 // import TabTest from "./components/custom-tabs/tab-test";
 // import FeatureFlags from "./components/feature-flag";
@@ -9,7 +9,7 @@ import Accordian from "./components/accordian";
 // import LightDarkMode from "./components/light-dark-mode";
 // import LoadMoreData from "./components/load-more-data";
 // import QRCodeGenerator from "./components/qr-code-generator";
-// import RandomColor from "./components/random-color";
+import RandomColor from "./components/randomColor";
 // import ScrollIndicator from "./components/scroll-indicator";
 // import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
 // import ScrollToSection from "./components/scroll-to-top-and-bottom/scroll-to-section";
@@ -26,9 +26,9 @@ function App() {
   return (
     <div className="App">
       {/* Accordian component */}
-      <Accordian />
+      {/* <Accordian /> */}
       {/* Random color component */}
-      {/* <RandomColor/> */}
+      <RandomColor />
 
       {/* Star rating component */}
       {/* <StarRating noOfStars={10}/> */}
