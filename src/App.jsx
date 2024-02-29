@@ -5,7 +5,7 @@ import "./App.css";
 // import FeatureFlags from "./components/feature-flag";
 // import FeatureFlagGlobalState from "./components/feature-flag/context";
 // import GithubProfileFinder from "./components/github-profile-finder";
-// import ImageSlider from "./components/image-slider";
+import ImageSlider from "./components/imageSlider";
 // import LightDarkMode from "./components/light-dark-mode";
 // import LoadMoreData from "./components/load-more-data";
 // import QRCodeGenerator from "./components/qr-code-generator";
@@ -14,7 +14,7 @@ import "./App.css";
 // import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
 // import ScrollToSection from "./components/scroll-to-top-and-bottom/scroll-to-section";
 // import SearchAutocomplete from "./components/search-autocomplete-with-api";
-import StarRating from "./components/starRating";
+// import StarRating from "./components/starRating";
 // import TicTacToe from "./components/tic-tact-toe";
 // import TreeView from "./components/tree-view";
 // import menus from "./components/tree-view/data";
@@ -22,23 +22,26 @@ import StarRating from "./components/starRating";
 // import UseOnclickOutsideTest from "./components/use-outside-click/test";
 // import UseWindowResizeTest from "./components/use-window-resize/test";
 
+import { Toaster } from "react-hot-toast";
+
 function App() {
   return (
     <div className="App">
+      <Toaster />
       {/* Accordian component */}
       {/* <Accordian /> */}
       {/* Random color component */}
       {/* <RandomColor /> */}
 
       {/* Star rating component */}
-      <StarRating noOfStars={10} />
+      {/* <StarRating noOfStars={10} /> */}
 
       {/* Image slider component */}
-      {/* <ImageSlider
+      <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      /> */}
+      />
 
       {/* Load more products component */}
       {/* <LoadMoreData/> */}
