@@ -5,7 +5,7 @@ import "./App.css";
 // import FeatureFlags from "./components/feature-flag";
 // import FeatureFlagGlobalState from "./components/feature-flag/context";
 // import GithubProfileFinder from "./components/github-profile-finder";
-import ImageSlider from "./components/imageSlider";
+// import ImageSlider from "./components/imageSlider";
 // import LightDarkMode from "./components/light-dark-mode";
 // import LoadMoreData from "./components/load-more-data";
 // import QRCodeGenerator from "./components/qr-code-generator";
@@ -37,14 +37,14 @@ function App() {
       {/* <StarRating noOfStars={10} /> */}
 
       {/* Image slider component */}
-      <ImageSlider
+      {/* <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"4"}
-      />
+      /> */}
 
       {/* Load more products component */}
-      {/* <LoadMoreData/> */}
+      {/* <LoadMoreData /> */}
 
       {/* Tree view component/menu UI component / recursive navigation menu */}
       {/* <TreeView menus={menus} /> */}
