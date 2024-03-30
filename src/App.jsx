@@ -16,8 +16,8 @@ import "./App.css";
 // import SearchAutocomplete from "./components/search-autocomplete-with-api";
 // import StarRating from "./components/starRating";
 // import TicTacToe from "./components/tic-tact-toe";
-// import TreeView from "./components/tree-view";
-// import menus from "./components/tree-view/data";
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
 // import UseFetchHookTest from "./components/use-fetch/test";
 // import UseOnclickOutsideTest from "./components/use-outside-click/test";
 // import UseWindowResizeTest from "./components/use-window-resize/test";
@@ -47,7 +47,7 @@ function App() {
       {/* <LoadMoreData /> */}
 
       {/* Tree view component/menu UI component / recursive navigation menu */}
-      {/* <TreeView menus={menus} /> */}
+      <TreeView menus={menus} />
 
       {/* QR code generator */}
       {/* <QRCodeGenerator/> */}
