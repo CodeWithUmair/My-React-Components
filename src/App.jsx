@@ -6,7 +6,7 @@ import "./App.css";
 // import FeatureFlagGlobalState from "./components/feature-flag/context";
 // import GithubProfileFinder from "./components/github-profile-finder";
 // import ImageSlider from "./components/imageSlider";
-// import LightDarkMode from "./components/light-dark-mode";
+import LightDarkMode from "./components/light-dark-mode";
 // import LoadMoreData from "./components/load-more-data";
 // import QRCodeGenerator from "./components/qr-code-generator";
 // import RandomColor from "./components/randomColor";
@@ -47,13 +47,13 @@ function App() {
       {/* <LoadMoreData /> */}
 
       {/* Tree view component/menu UI component / recursive navigation menu */}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} /> */}
 
       {/* QR code generator */}
       {/* <QRCodeGenerator/> */}
 
       {/* light and dark theme switch */}
-      {/* <LightDarkMode/> */}
+      <LightDarkMode />
 
       {/* Scroll indicator component */}
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
