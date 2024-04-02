@@ -1,12 +1,12 @@
 import "./App.css";
 // import Accordian from "./components/accordian";
-// import ModalTest from "./components/custom-modal-popup/modal-test";
+import ModalTest from "./components/custom-modal-popup/modal-test";
 // import TabTest from "./components/custom-tabs/tab-test";
 // import FeatureFlags from "./components/feature-flag";
 // import FeatureFlagGlobalState from "./components/feature-flag/context";
 // import GithubProfileFinder from "./components/github-profile-finder";
 // import ImageSlider from "./components/imageSlider";
-import LightDarkMode from "./components/light-dark-mode";
+// import LightDarkMode from "./components/light-dark-mode";
 // import LoadMoreData from "./components/load-more-data";
 // import QRCodeGenerator from "./components/qr-code-generator";
 // import RandomColor from "./components/randomColor";
@@ -16,8 +16,8 @@ import LightDarkMode from "./components/light-dark-mode";
 // import SearchAutocomplete from "./components/search-autocomplete-with-api";
 // import StarRating from "./components/starRating";
 // import TicTacToe from "./components/tic-tact-toe";
-import TreeView from "./components/tree-view";
-import menus from "./components/tree-view/data";
+// import TreeView from "./components/tree-view";
+// import menus from "./components/tree-view/data";
 // import UseFetchHookTest from "./components/use-fetch/test";
 // import UseOnclickOutsideTest from "./components/use-outside-click/test";
 // import UseWindowResizeTest from "./components/use-window-resize/test";
@@ -53,7 +53,7 @@ function App() {
       {/* <QRCodeGenerator/> */}
 
       {/* light and dark theme switch */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
 
       {/* Scroll indicator component */}
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
@@ -62,7 +62,7 @@ function App() {
       {/* <TabTest /> */}
 
       {/* Custom Modal Component */}
-      {/* <ModalTest/> */}
+      <ModalTest/>
 
       {/* Github profile finder */}
       {/* <GithubProfileFinder/> */}
